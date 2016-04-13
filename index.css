@@ -1,0 +1,512 @@
+/*
+   CSS NORMALIZE
+
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed,
+   figure, figcaption, footer, header, hgroup,
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section { 
+    display: block;
+  }
+  body {
+    font-family: sans-serif;
+    line-height: 1;
+  }
+  ol, ul { 
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+a{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.navbar-default{
+  width:100%;
+}
+
+
+li.dropdown-toggle:focus{
+  background-color: gray;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+  background-color: gray;
+  background-image: none;
+  color:white;
+}
+
+li.dropdown:hover, li.dropdown:focus{
+     color:white;
+  font-family: sans-serif;
+  font-weight: 100;
+  text-shadow: none;
+  background-color: gray;
+}
+
+.navbar-default .navbar-nav>li>a{
+  color:white;
+  font-family: sans-serif;
+  font-weight: 100;
+  text-shadow:none;
+  font-size: 13px;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+   color:white;
+  font-family: sans-serif;
+  font-weight: 100;
+  text-shadow: none;
+}
+
+.navbar-default .navbar-nav>li>a:focus{
+   color:white;
+  font-family: sans-serif;
+  font-weight: 100;
+  text-shadow: none;
+}
+
+.x-banner{
+font-size: 18px;
+font-weight: 500;
+}
+
+
+
+.navbar-default .navbar-collapse{
+  background-color: gray;
+}
+
+span.woohoo-banner{
+  font-weight:500;
+}
+
+ul > li.off-adult-styles-banner{
+  font-weight: 700;
+}
+
+
+/*DROPDOWN MENU*/
+
+ul.dropdown-menu{
+  width:350px;
+  border-bottom:5px solid gray;
+  border-left:5px solid gray;
+  border-right:5px solid gray;
+  border-top: 3px solid gray;
+  margin-left: -230px;
+}
+
+
+
+
+.percent-off{
+  padding-top: 35px;
+  font-size: 55px;
+  font-weight:700;
+  color:gray;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.off-any-one-item{
+      margin-right: 40px;
+
+}
+
+.no-exclusion{
+font-weight:600;
+font-size: 14px;
+}
+
+.any-one-item-dropdown{
+font-size: 23px;
+text-align: center;
+letter-spacing: 1.2px;
+color:gray;
+font-weight: 500;
+margin-top: 5px;
+}
+
+.no-exclusion-dropdown{
+  color:gray;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 24px;
+  font-size: 19px;
+
+}
+
+.dresses{
+  padding-top: 10px;
+  font-size: 23px;
+  font-weight:400;
+  color:gray;
+  font-family: sans-serif;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.use-code{
+  padding-top: 20px;
+  font-size: 17px;
+  font-weight:200;
+  color:gray;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.restrictions{
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-size: 10px;
+  font-weight:400;
+  text-decoration: underline;
+  color:black;
+  font-family: sans-serif;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.ends{
+  padding-left: 0px;
+}
+
+
+
+span.x-disrupt{
+  font-weight:500;
+  font-size: 23px;
+}
+
+span.use-code{
+  color:black;
+}
+
+
+/*small banner section*/
+
+
+.no-exclusion-mobile{
+font-size: 20px;
+text-align: center;
+
+margin-bottom: 17px;
+
+color:gray;
+font-weight: 600;
+margin-top: 2px;
+letter-spacing: 2px;
+
+}
+
+section.disrupter{
+  display:none;
+}
+
+.disrupter-div{
+  background-color:gray;
+  padding:15px;
+}
+
+.online-only{
+font-size: 15px;
+letter-spacing: 1.5px;
+color:black;
+font-weight: 100;
+margin-bottom: 10px;
+}
+
+.off-one-item-mobile{
+color:gray;
+padding-top:10px;
+padding-bottom:10px;
+font-weight: 500px;
+
+font-size: 35px;
+}
+
+.use-the-code{
+font-size: 15px;
+letter-spacing: 1.2px;
+color:black;
+font-weight: 300;
+margin-top: -5px;
+}
+
+
+.restrictions-details{
+  text-decoration: underline;
+  float:right;
+  color:white;
+  margin-right:15px;
+  margin-top: 0px;
+  margin-right: 100px;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+span.underline{
+  border-bottom: 3px solid gray;
+  color:gray;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1023px){
+
+#promo-banner{
+  display:none;
+  }
+ 
+li.mobile-disrupter{
+  text-align: center;
+  }
+
+section.disrupter{
+  display:inline;
+  background-color: white;
+  font-family: sans-serif;
+  }
+
+.disrupter-div{
+  background-color: white;
+  font-family: sans-serif;
+  }
+}
+
+
+
+/*
+#restrictions-details{
+  font-size: 7px;
+  margin-right: 50px;
+  }
+}*/
+
+
+@media screen and (max-width: 700px){
+
+  span.underline{
+  border-bottom: 2px solid gray;
+  color:gray;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+  .online-only{
+font-size: 10px;
+margin-bottom: 10px;
+}
+ 
+.off-one-item-mobile{
+font-size: 25px;
+margin-bottom: 5px;
+}
+
+.use-the-code{
+font-size: 15px;
+letter-spacing: 1.2px;
+color:black;
+font-weight: 300;
+}
+
+.restrictions{
+  font-size: 7px;
+  padding-top: 17px
+}
+}
+
+@media screen and (max-width: 500px){
+
+.online-only{
+font-size: 10px;
+}
+ 
+.off-one-item-mobile{
+font-size: 22px;
+}
+
+.use-the-code{
+font-size: 15px;
+letter-spacing: 1.2px;
+color:black;
+font-weight: 300;
+}
+
+.restriction{
+font-size: 7px;
+}
+}
+
+
+.navbar-default{
+  width:100%;
+}
+
+.nav-bar{
+  text-align: center;
+  font-style: 10px;
+}
+
+
+li.nav-item{
+  display:inline-block;
+  color:white;
+  font-family: sans-serif;
+  font-weight:400;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 13px;
+}
+
+.nav>li>a {
+color:white;
+font-size: 13px;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+ background-color: gray; 
+  color:white;
+   font-weight:400;
+}
+
+.nav >li {
+  display:inline-block;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+
+
+.take-group{
+  display:inline;
+}
+
+.lines{
+  letter-spacing: -2px;
+  font-size: 8px;
+}
+
+
+li.nav-item a:hover, li.nav-item a:focus{
+  background-color: gray; 
+  color:white;
+}
+
+
+
+
+/*gets rid of background color on close button when it's clicked */
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+  background-color: gray; 
+}
+
+
+.navbar-default .navbar-collapse{
+  background-color: gray; 
+}
+
+span.woohoo-banner{
+  font-weight:700;
+}
+
+
+
+
+
+  /*new classes for individual list item styling */
+span.dresses{
+  font-weight: 100;
+  color:white;
+
+
+}
+
+li.white{
+  color:white;
+  font-size: 13px;
+}
+
+li.code{
+font-weight: 100;
+font-size: 13px;
+
+}
+
+li.online{
+  font-weight: 100;
+  font-size: 13px;
+}
+
+li.ends{
+font-weight: 100;
+font-size: 13px;
+padding-left: 0px;
+}
+
+span.close-button{
+  display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
