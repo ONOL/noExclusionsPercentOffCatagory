@@ -1,136 +1,653 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta name="viewport" content="width=device-width" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta charset="UTF-8">
-  <!--   <meta http-equiv="refresh" content="5"> -->
-
-  <!--   refresh!! -->
-  <title>Percent Off Catagory</title>
 
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-
-
-
-  <!--  Raleway font -->
-  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-
-  <!--   Patua font  -->
-  <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
-
-  <!--  Social Media fonts  -->
+  <!--   jquery  -->
   <script src='http://code.jquery.com/jquery-2.1.4.min.js'></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="owl.carousel/owl.carousel.min.css" />
+<style>
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <!-- Optional theme -->
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" type='text/css'>
-  <!--  my CSS -->
-
-  <link rel="stylesheet" href="index.css" type='text/css'>
-</head>
-
-<body>
-<section id="promo-banner">
-<nav class="navbar navbar-default">
-  <div>
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav nav-bar">
-
-      <li class="nav-item white online">ONLINE ONLY</li>
-
-      <li class="white off-any-one-item">50% OFF ANY ONE ITEM</li>
-      <li class="white no-exclusion">NO EXCLUSIONS!</li>
-     
-
-      <li class="nav-item white code">USE CODE <span class="x-banner"> xxxxxx</span></a></li>
-      <li class="nav-item white ends">ENDS XX/XX</li>
-
-      
-        <li class="dropdown">
-          <a class="white clicker" href="#" class="dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-
-          <span class='white more'>MORE</span> <span class="white more glyphicon glyphicon-plus-sign"></span>
-          <span class='white close-button'>CLOSE</span> <span class="white close-button glyphicon glyphicon-remove-sign"></span>
-          </a>
+/* WCD REMOVE */
 
 
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed,
+   figure, figcaption, footer, header, hgroup,
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section { 
+    display: block;
+  }
+  body {
+    font-family: sans-serif;
+    line-height: 1;
+  }
+  ol, ul { 
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
 
-<!-- THIS IS THE TEXT FROM THE DROPDOWN DISRUPTER, THE ONE THAT DROPS DOWN FROM THE BANNER ON DESKTOP -->
+a{
+  padding-top:10px;
+  padding-bottom:10px;
+}
 
-          <ul class="dropdown-menu">
-            <div class="percent-off">50% OFF</div>
-            <div class="any-one-item-dropdown">ANY ONE ITEM</div>
-            <div class="no-exclusion-dropdown">No Exclusions!</div>
-            <div class="use-code"><span class="use-code">USE CODE </span><span class="x-disrupt">xxxxxx</span></div>
-            <div class="restrictions">Details</div>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+.navbar-default{
+  width:100%;
+}
 
-  
-</section>
+/*
+END WCD REMOVE*/
 
-<section class="disrupter">
-<div class= 'disrupter-div'>
+/*Navigation*/
+
+/*gets rid of background color or text decoration on hover, focus and active*/
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+  background-color: #003764 ; 
+}
+
+li.dropdown-toggle:focus{
+  background-color: #003764 ;
+}
+
+.navbar-rectangle .navbar-nav>.open>a, .navbar-rectangle .navbar-nav>.open>a:focus, .navbar-rectangle .navbar-nav>.open>a:hover{
+  background-color: #003764 ;
+  background-image: none;
+  color:white;
+}
+
+.navbar-rectangle .navbar-nav>li>a, .navbar-rectangle .navbar-nav>li>a:hover, .navbar-rectangle.navbar-nav>li>a:focus{
+  color:white;
+   font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  text-shadow: none;
+  font-size: 13px;
+}
+
+li.mydropdown:hover, li.mydropdown:focus{
+  color:white;
+   font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  text-shadow: none;
+   background-color: #003764 ;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+   background-color: #003764 ;
+  color:white;
+  font-weight:400;
+}
+
+li.nav-item a:hover, li.nav-item a:focus{
+   background-color: #003764 ;
+  color:white;
+}
+
+/*  end */
 
 
-<div class='row'>
-  <ul class="mobile-banner">
-  <li class="mobile-disrupter online-only">ONLINE ONLY. ENDS 3/21.</li>
-  <li class="mobile-disrupter off-one-item-mobile">50% OFF ANY ONE ITEM</li>
-  <div class="no-exclusion-mobile">No Exclusions!</div>
-  <li class="mobile-disrupter use-the-code">USE CODE <span class="underline">xxxxxx<span></li>
-  <li><div class="restrictions">Details</div></li>
-  </ul>
+/*desktop navbar*/
 
-</div>
+.navbar-rectangle .navbar-div, .navbar-rectangle .navbar-collapse{
+  background-color: #003764 ;
+}
 
 
+.navbar-rectangle{  /*making the banner element the full width of the page */
+  width:100%;
+}
 
-</div>
-</section>
+.nav{
+  text-align: center;
+  font-style: 10px;
+}
+
+.nav>li>a {
+  color:white;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+/*end*/
+
+/*indvidual nav items */
+li.nav-item{
+  display:inline-block;
+  color:white;
+   font-family: "Open Sans", sans-serif;
+  font-weight:400;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 0px; 
+  padding-right: 0px; 
+  font-size: 13px;
+} 
+
+.nav>li{
+  display:inline-block;
+   font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  font-size: 13px;
+  width: 14%;
+}
+
+
+
+li.code-promo{
+  font-weight: 100;
+  font-size: 13px;
+  width: 15%;
+}
+
+.bonus-code-promo{
+  font-weight: 600;
+}
+
+li.online-promo{
+  font-weight: 100;
+  font-size: 13px;
+  width: 18%;
+
+}
+
+li.ends-promo{
+  font-weight: 100;
+  font-size: 13px;
+  padding-left: 0px;
+  width: 15%;
+}
+
+li.off-any-one-item{
+  color:white;
+  font-size: 13.5px;
+  font-weight: 700;
+  width: 20%;  
+}
+
+.x-banner{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+ul > li.off-adult-styles-banner{
+  font-weight: 700;
+}
+
+
+/* end nav items */
+
+
+/*DROPDOWN MENU*/
+
+
+
+.dropdown-content-eb {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width:320px;
+  top: 31px;
+  border-top: 5px solid #003764 ;
+  border-bottom:5px solid #003764 ;
+  border-left:5px solid #003764 ;
+  border-right:5px solid #003764 ;
+  margin-left: -230px;
+  box-shadow: none;
+}
+
+ul.dropdown-disrupter{
+  width:300px;
+  border-bottom:5px solid #003764 ;
+  border-left:5px solid #003764 ;
+  border-right:5px solid #003764 ;
+  float: right;
+  margin-right: 290px;
+}
+
+.close-button, .more-promo{
+  font-size:14px;
+}
+
+.close-ex, .more-plus{
+  font-size:18px;
+
+}
+
+.percent-off-promo{
+  padding-top: 25px;
+  font-size: 60px;
+  font-weight:700;
+  color:#003764 ;
+   font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+
+.any-one-item-dropdown{
+  font-size: 23px;
+  text-align: center;
+  letter-spacing: 1.2px;
+  color:#003764 ;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+
+.use-code-promo{
+  padding-top: 20px;
+  font-size: 19px;
+  letter-spacing: 2px;
+  font-weight:200;
+  color:#003764 ;
+   font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.bonus-code-disrupter{
+  padding-top: 20px;
+  font-size: 19px;
+  letter-spacing: 2px;
+  color:#003764 ;
+   font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-weight:700;
+}
+
+.use-the-code{
+  margin-top: -5px;
+  font-size: 19px;
+  letter-spacing: 1.2px;
+  font-weight:300;
+  color:#003764 ;
+   font-family: "Open Sans", sans-serif;
+}
+
+.restrictions-promo{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 10px;
+  font-weight:400;
+  text-decoration: underline;
+  color:#003764 ;
+   font-family: "Open Sans", sans-serif;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.no-exclusions-dropdown{
+  color: #003764 ;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+span.x-disrupt{
+  font-weight:500;
+  font-size: 27px;
+}
+
+span.use-code-promo{
+  color:#003764 ;
+}
+
+
+
+li.no-exclusions-banner{
+      color: white;
+      width:15%;     
+}
+
+
+
+
+
+
+
+/*new classes for individual list item for desktop-nav styling */
+
+
+
+
+/*hide disrupter so it doesn't display on page load */
+span.close-button{
+  display:none;
+} 
+
+.dropdown-disrupter{
+  display:none;
+}
+
+
+.wcd_promo button {
+  background-color: #003764; 
+  color: white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 2200px){
+
+  li.off-any-one-item{
+    width: 15%;
+  }
+
+  li.ends-promo{
+    width: 9%;
+  }
+
+  li.online-promo{
+    width: 14%;
+
+  }
+
+   li.code-promo {
+    width: 14%;
+
+  }
+}
+
+
+@media screen and (max-width: 1311px){
+  li.off-any-one-item{
+    width: 19%;
+  }
+
+  li.ends-promo{
+    width: 11%;
+  }
+
+  li.online-promo
+  {
+    width: 18%;
+
+  }
+
+   li.code-promo {
+    width: 18%;
+
+  }
+}
+
+@media screen and (max-width: 1077px){
+  .nav>li {
+    font-size: 12px;
+  }
+
+  .more-promo, .close-button{
+    font-size: 13px;
+  }
+
+  .close-ex, .more-plus{
+    font-size:16px;
+  }
+
+  span.x-banner{
+    font-size: 16px;
+  }
+
+  .dropdown-content-eb{
+    top: 29px;
+  }
+
+  li.code-promo{
+    width:20%;
+  }
+
+
+  .wcd_promo button {
+  font-size: 13px;
+}
+
+}
+
+/*media queries */
+
+
+/*end 1023*/
+
+@media screen and (max-width: 893px){
+  .nav>li {
+    font-size: 11px;
+  }
+
+  .more, .close-button{
+    font-size: 12px;
+  }
+
+  .close-ex, .more-plus{
+    font-size:15px;
+  }
+
+  span.x-banner{
+    font-size: 15px;
+  }
+
+  li.code-promo{
+    width:19%;
+  }
+
+  .dropdown-content-eb{
+    top: 29px;
+  }
+
+  li.no-exclusions-banner{
+      width:16%;     
+}
+    li.online-promo{
+      width: 13%;
+    }
+
+    li.off-any-one-item {
+    width: 23%;
+
+}
+
+  .wcd_promo button {
+  font-size: 12px;
+}
+
+}
+
+
+
+
+
+/*End 500px*/
+
+
+/* Dropdown Button */
+
+
+.close-promo{
+  display:none;
+}
+
+.show-promo {display:inline-block;}
+
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #003764 ;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.mydropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+
+
+
+
+button:focus {outline:0;}
+button:active {outline:0;}
+
+
+/* Links inside the dropdown */
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content-eb a:hover {background-color: #003764;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show-promo {display:inline-block;}
+
+#headline_popup_segA{
+  z-index: 500;
+}
+
+a.restrictions-promo:hover{
+  background: transparent;
+  color:#003764 ;
+}
+
+
+/* end css hdln/dsrptr */
+
+html.breakpoint-small .responsiveShoppingBag .wcd_promo_segA_wrapper, html.breakpoint-small .responsiveShoppingBag .wcd_promo_segB_wrapper { display:none !important;}
+html.breakpoint-medium .responsiveShoppingBag .wcd_promo_segA_wrapper, html.breakpoint-medium .responsiveShoppingBag .wcd_promo_segB_wrapper { display:none !important;}
+/*html.breakpoint-large .responsiveShoppingBag #headline_segA a img { display:none }
+html.breakpoint-large .responsiveShoppingBag #GID_MarketingContainer_10000394 { width:100% }
+html.breakpoint-large .responsiveShoppingBag #headline_segA { width:768px; height:32px; margin:5px auto 0; }
+*/
+
+/*
+html.breakpoint-large .responsiveShoppingBag #headline_segA a { display:block; width:768px; height:32px; background-image:url(/Asset_Archive/ONWeb/content/0010/456/117/assets/120715_US_Brong_hdln.gif); background-size:100% 100%; }
+*/
+
+/*div.onesite div.modal_standard div.modal--content iframe#iframe { height:99% }*/
+
+
+</style>
+ 
+
+        <div class="wcd_promo_segA_wrapper wcd_promo">
+    <div class="navbar-rectangle">
+      <!-- THIS IS THE TEXT FOR THE MAIN BANNER, THE SKINNY STRIP OF TEXT THAT COVERS FULL WIDTH ON DESKTOP -->
+
+      <div class="collapse navbar-collapse" >
+        <ul id='headline_segA' class="nav">
+          <li class="more-promo nav-item  online-promo">ONLINE ONLY</li>
+          <li class="more-promo off-any-one-item">15% OFF EVERYTHING</li>
+          <li class="more-promo no-exclusions-banner">NO EXCLUSIONS</li>
+          <li class="more-promo nav-item code-promo">USE CODE <span class="bonus-code-promo">ENJOY</span></li>
+          <li class="more-promo nav-item ends-promo">ENDS 7/12</li>
+
+
+
+          <!-- END!  -->
+
+
+          <!-- THIS IS THE TEXT FOR THE MORE AND CLOSE BUTTONS THAT CLICK OPEN AND CLOSE THE DISRUPTER-->
+
+          <li>
+            <div class="mydropdown">
+
+              <button class="show-promo">
+                <span class='more-promo'>MORE <span class="more-plus">+</span></span>
+              </button>
+
+              <button class="close-promo">
+                <span class='close-button-promo'>CLOSE <span class="close-ex">x</span></span>
+              </button>
+
+              <div id='headline_popup_segA'  class="dropdown-content-eb">
+
+                <div class="percent-off-promo">15% OFF</div>
+                <div class="any-one-item-dropdown">EVERYTHING</div>
+                <div class="no-exclusions-dropdown">NO EXCLUSIONS!</div>
+                <div class="use-code"><span class="use-code-promo">USE CODE </span><span class="bonus-code-disrupter">ENJOY</span></div>
+                 <div class="restrictions-promo"><a class="restrictions-promo" href="#details" onclick="return disruptorManager.showPromoLegalPopup();">Restrictions & Details</a></div>
+
+
+
+                <!-- END!  -->
+
+                <!-- THIS IS THE TEXT FROM THE DROPDOWN DISRUPTER, THE ONE THAT DROPS DOWN FROM THE BANNER ON DESKTOP -->
+              </div><!-- end dropdown -->
+            </div> <!-- end nav collapse -->
+          </li> <!-- end dropnav -->
+        </ul> <!-- end nav-bar"> -->
+      </div> <!-- end nav container -->
+          </div> <!-- end nav container -->
+              </div> <!-- end nav container -->
+ 
+
+
+    <!-- END!  -->
+
+
+    <!-- THIS IS THE TEXT THAT APPEARS ON MOBILE -->
+
+
 
 <foot>
+
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 <script src='http://code.jquery.com/jquery-2.1.4.min.js'></script>
 
 <script>
-$( "span.more" ).click(function() {
-  $( ".dropdown-menu" ).slideToggle( "medium" );
-   $( "span.more" ).css( "display", "none" );
-   $( "span.close-button" ).css( "display", "inline-block" );
+jQuery( "span.more" ).click(function() {
+  jQuery( "#myDropdown" ).slideToggle( "medium" );
+  jQuery( "span.more" ).css( "display", "none" );
+  jQuery( "span.close-button").css( "display", "inline-block" );
 });
-$( "span.close-button" ).click(function() {
-  $( ".dropdown-menu" ).slideToggle( "medium" );
-   $( "span.close-button" ).css( "display", "none" );
-   $( "span.more" ).css( "display", "inline-block" );
+
+
+jQuery( "span.close-button" ).click(function() {
+  jQuery( "#myDropdown" ).slideToggle( "medium" );
+  jQuery( "span.close-button" ).css( "display", "none" );
+  jQuery( "span.more" ).css( "display", "inline-block" );
 });
+
+jQuery(window).resize(function(){
+  if (jQuery(window).width() <= 1023){  
+    jQuery( ".dropdown-disrupter" ).css( "display", "none" );
+  }
+});
+
+
 </script>
 
 

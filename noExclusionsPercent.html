@@ -1,0 +1,972 @@
+
+
+  <!--   jquery  -->
+  <script src='http://code.jquery.com/jquery-2.1.4.min.js'></script>
+
+
+
+  <style>
+
+   /*CSS NORMALIZE for all html */
+
+
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed,
+   figure, figcaption, footer, header, hgroup,
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section { 
+    display: block;
+  }
+  body {
+    font-family: sans-serif;
+    line-height: 1;
+  }
+  ol, ul { 
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  a{
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+
+
+  /*Navigation*/
+  li.dropdown-toggle:focus{
+    background-color: gray;
+  }
+
+  .navbar-rectangle .navbar-nav>.open>a, .navbar-rectangle .navbar-nav>.open>a:focus, .navbar-rectangle .navbar-nav>.open>a:hover{
+    background-color: gray;
+    background-image: none;
+    color:white;
+  }
+
+  li.dropdown:hover, li.dropdown:focus{
+    color:white;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-shadow: none;
+    background-color: gray;
+  }
+
+  .navbar-rectangle .navbar-nav>li>a{
+    color:white;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-shadow:none;
+    font-size: 13px;
+  }
+
+  .navbar-rectangle .navbar-nav>li>a:hover, .navbar-rectangle.navbar-nav>li>a:focus{
+    color:white;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-shadow: none;
+  }
+
+  .navbar-rectangle{  /*making the banner element the full width of the page */
+    width:100%;
+  }
+
+  .navbar-rectangle .navbar-collapse{
+    background-color: gray;
+  }
+
+  .x-banner{
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  span.woohoo-banner{
+    font-weight:500;
+  }
+
+  ul > li.off-adult-styles-banner{
+    font-weight: 700;
+  }
+
+  a.span{
+    text-decoration: none;
+  }
+
+  .nav>li>a{
+    text-decoration: none;
+  }
+
+  /*DROPDOWN MENU*/
+
+  ul.dropdown-disrupter{
+    width:300px;
+    border-bottom:5px solid gray;
+    border-left:5px solid gray;
+    border-right:5px solid gray;
+    float: right;
+    margin-right: 290px;
+  }
+
+  .close-button, .more{
+    font-size:14px;
+  }
+
+  .close-ex, .more-plus{
+    font-size:18px;
+
+  }
+
+  .percent-off{
+    padding-top: 35px;
+    font-size: 65px;
+    font-weight:700;
+    color:gray;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+
+  .no-exclusion{
+    font-weight:600;
+    font-size: 14px;
+  }
+
+  .any-one-item-dropdown{
+    font-size: 23px;
+    text-align: center;
+    letter-spacing: 1.2px;
+    color:gray;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+
+  .valid{
+    color:gray;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 24px;
+    font-size: 15px;
+  }
+
+  .dresses{
+    padding-top: 10px;
+    font-size: 23px;
+    font-weight:400;
+    color:gray;
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 1.2px;
+  }
+  .use-code{
+    padding-top: 20px;
+    font-size: 19px;
+    letter-spacing: 2px;
+    font-weight:200;
+    color:gray;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  .restrictions{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 10px;
+    font-weight:400;
+    text-decoration: underline;
+    color:black;
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 1.2px;
+  }
+
+  .ends{
+    padding-left: 0px;
+  }
+
+  span.x-disrupt{
+    font-weight:500;
+    font-size: 27px;
+  }
+
+  span.use-code{
+    color:black;
+  }
+
+  /*small banner section*/
+  .valid-mobile{
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 17px;
+    color:gray;
+    font-weight: 600;
+    margin-top: 2px;
+    letter-spacing: 2px;
+  }
+
+  section.disrupter{
+    display:none;
+  }
+
+  .disrupter-div{
+    background-color:gray;
+    padding:15px;
+  }
+
+  .online-only{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color:black;
+    font-weight: 100;
+    margin-bottom: 10px;
+  }
+
+  .off-one-item-mobile{
+    color:gray;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-weight: 500px;
+    font-size: 35px;
+  }
+
+  .use-the-code{
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    color:black;
+    font-weight: 300;
+    margin-top: -5px;
+  }
+
+  .restrictions-details{
+    text-decoration: underline;
+    float:right;
+    color:white;
+    margin-right:15px;
+    margin-top: 0px;
+    margin-right: 100px;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  span.underline{
+    border-bottom: 3px solid gray;
+    color:gray;
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+  }
+
+  /*end small banner */
+  .navbar-rectangle{
+    width:100%;
+  }
+
+  .nav-bar{
+    text-align: center;
+    font-style: 10px;
+  }
+
+  li.nav-item{
+    display:inline-block;
+    color:white;
+    font-family: sans-serif;
+    font-weight:400;
+    letter-spacing: 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px; 
+    padding-right: 0px; 
+    font-size: 13px;
+  }
+
+  .nav>li>a {
+    color:white;
+    font-size: 13px;
+  }
+
+  .nav>li>a:hover, .nav>li>a:focus {
+   background-color: gray; 
+   color:white;
+   font-weight:400;
+ }
+
+ .nav>li{
+  display:inline-block;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-size: 13px;
+  width: 14%;
+}
+
+.take-group{
+  display:inline;
+}
+
+.lines{
+  letter-spacing: -2px;
+  font-size: 8px;
+}
+
+
+li.nav-item a:hover, li.nav-item a:focus{
+  background-color: gray; 
+  color:white;
+}
+
+
+/*gets rid of background color on close button when it's clicked */
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+  background-color: gray; 
+}
+
+.navbar-rectangle .navbar-div{
+  background-color: gray; 
+}
+
+span.woohoo-banner{
+  font-weight:700;
+}
+
+/*new classes for individual list item styling */
+span.dresses{
+  font-weight: 100;
+  color:white;
+}
+
+li.white{
+  color:white;
+  font-size: 13px;
+
+}
+
+li.code{
+  font-weight: 100;
+  font-size: 13px;
+}
+
+li.online{
+  font-weight: 100;
+  font-size: 13px;
+
+  
+}
+
+li.ends{
+  font-weight: 100;
+  font-size: 13px;
+  padding-left: 0px;
+
+}
+
+li.off-any-one-item{
+  color:white;
+  font-size: 14px;
+  font-weight: 700;
+   width: 20%;
+  
+}
+
+
+li.ends{
+  width: 9%;
+}
+
+li.code, li.ends{
+  width: 15%;
+}
+
+
+/*hide disrupter so it doesn't display on page load */
+span.close-button{
+  display:none;
+} 
+
+.dropdown-disrupter{
+  display:none;
+}
+
+
+.percent-off{
+  padding-top: 35px;
+  font-size: 55px;
+  font-weight:700;
+  color:gray;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+.no-exclusion{
+font-weight:600;
+font-size: 14px;
+width:16%;
+}
+
+.any-one-item-dropdown{
+font-size: 23px;
+text-align: center;
+letter-spacing: 1.2px;
+color:gray;
+font-weight: 500;
+margin-top: 5px;
+}
+
+.no-exclusion-dropdown{
+  color:gray;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 24px;
+  font-size: 19px;
+}
+
+.dresses{
+  padding-top: 10px;
+  font-size: 23px;
+  font-weight:400;
+  color:gray;
+  font-family: sans-serif;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.use-code{
+  padding-top: 20px;
+  font-size: 17px;
+  font-weight:200;
+  color:gray;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.restrictions{
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-size: 10px;
+  font-weight:400;
+  text-decoration: underline;
+  color:black;
+  font-family: sans-serif;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.ends{
+  padding-left: 0px;
+}
+
+
+
+span.x-disrupt{
+  font-weight:500;
+  font-size: 23px;
+}
+
+span.use-code{
+  color:black;
+}
+
+
+/*small banner section*/
+
+
+.no-exclusion-mobile{
+font-size: 20px;
+text-align: center;
+
+margin-bottom: 17px;
+
+color:gray;
+font-weight: 600;
+margin-top: 2px;
+letter-spacing: 2px;
+
+}
+
+section.disrupter{
+  display:none;
+}
+
+.disrupter-div{
+  background-color:gray;
+  padding:15px;
+}
+
+.online-only{
+font-size: 15px;
+letter-spacing: 1.5px;
+color:black;
+font-weight: 100;
+margin-bottom: 10px;
+}
+
+.off-one-item-mobile{
+color:gray;
+padding-top:10px;
+padding-bottom:10px;
+font-weight: 500px;
+
+font-size: 35px;
+}
+
+.use-the-code{
+font-size: 15px;
+letter-spacing: 1.2px;
+color:black;
+font-weight: 300;
+margin-top: -5px;
+}
+
+
+.restrictions-details{
+  text-decoration: underline;
+  float:right;
+  color:white;
+  margin-right:15px;
+  margin-top: 0px;
+  margin-right: 100px;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+span.underline{
+  border-bottom: 3px solid gray;
+  color:gray;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1023px){
+
+#promo-banner{
+  display:none;
+  }
+ 
+li.mobile-disrupter{
+  text-align: center;
+  }
+
+section.disrupter{
+  display:inline;
+  background-color: white;
+  font-family: sans-serif;
+  }
+
+.disrupter-div{
+  background-color: white;
+  font-family: sans-serif;
+  }
+}
+
+
+
+/*
+#restrictions-details{
+  font-size: 7px;
+  margin-right: 50px;
+  }
+}*/
+
+
+@media screen and (max-width: 700px){
+
+  span.underline{
+  border-bottom: 2px solid gray;
+  color:gray;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+  .online-only{
+font-size: 10px;
+margin-bottom: 10px;
+}
+ 
+.off-one-item-mobile{
+font-size: 25px;
+margin-bottom: 5px;
+}
+
+.use-the-code{
+font-size: 15px;
+letter-spacing: 1.2px;
+color:black;
+font-weight: 300;
+}
+
+.restrictions{
+  font-size: 7px;
+  padding-top: 17px
+}
+}
+
+@media screen and (max-width: 500px){
+
+.online-only{
+font-size: 10px;
+}
+ 
+.off-one-item-mobile{
+font-size: 22px;
+}
+
+.use-the-code{
+font-size: 15px;
+letter-spacing: 1.2px;
+color:black;
+font-weight: 300;
+}
+
+.restriction{
+font-size: 7px;
+}
+}
+
+
+.navbar-default{
+  width:100%;
+}
+
+.nav-bar{
+  text-align: center;
+  font-style: 10px;
+}
+
+
+li.nav-item{
+  display:inline-block;
+  color:white;
+  font-family: sans-serif;
+  font-weight:400;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 13px;
+}
+
+.nav>li>a {
+color:white;
+font-size: 13px;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+ background-color: gray; 
+  color:white;
+   font-weight:400;
+}
+
+.nav >li {
+  display:inline-block;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+
+
+.take-group{
+  display:inline;
+}
+
+.lines{
+  letter-spacing: -2px;
+  font-size: 8px;
+}
+
+
+li.nav-item a:hover, li.nav-item a:focus{
+  background-color: gray; 
+  color:white;
+}
+
+
+
+
+/*gets rid of background color on close button when it's clicked */
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+  background-color: gray; 
+}
+
+
+.navbar-default .navbar-collapse{
+  background-color: gray; 
+}
+
+span.woohoo-banner{
+  font-weight:700;
+}
+
+
+
+
+
+  /*new classes for individual list item styling */
+span.dresses{
+  font-weight: 100;
+  color:white;
+
+
+}
+
+li.white{
+  color:white;
+  font-size: 13px;
+}
+
+li.code{
+font-weight: 100;
+font-size: 13px;
+
+}
+
+li.online{
+  font-weight: 100;
+  font-size: 13px;
+}
+
+li.ends{
+font-weight: 100;
+font-size: 13px;
+padding-left: 0px;
+}
+
+span.close-button{
+  display:none;
+}
+
+
+/*End 500px*/
+li.dropbutton{
+  width:13%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: gray;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: gray;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width:300px;
+  top: 48px;
+  border-top: 5px solid gray;
+  border-bottom:5px solid gray;
+  border-left:5px solid gray;
+  border-right:5px solid gray;
+  margin-left: -200px;
+  box-shadow: none;
+}
+
+.no-exclusion-dropdown{
+  color:gray;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 24px;
+  font-size: 19px;
+}
+
+
+li.no-exclusion{
+font-weight:600;
+font-size: 12px;
+width:16%;
+color:white;
+}
+
+
+
+
+
+
+button:focus {outline:0;}
+button:active {outline:0;}
+
+
+/* Links inside the dropdown */
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: gray}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+  #myDropdown{
+    z-index: 1000;
+  }
+
+  a.restrictions:hover{
+    background: transparent;
+    color:black;
+  }
+
+  li.drop-button{
+  width:9%;
+}
+
+
+
+</style>
+
+
+
+
+
+  <section id="promo-banner">
+    <div class="navbar-rectangle">
+      <!-- THIS IS THE TEXT FOR THE MAIN BANNER, THE SKINNY STRIP OF TEXT THAT COVERS FULL WIDTH ON DESKTOP -->
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-div-1">
+        <ul class="nav nav-bar">
+          <li class="nav-item white online">ONLINE ONLY</li>
+          <li class="white off-any-one-item">50% OFF ANY ONE ITEM</li>
+          <li class="no-exclusion">NO EXCLUSIONS!</li>
+          <li class="nav-item white code">USE CODE <span class="x-banner"> xxxxxx</span></li>
+          <li class="nav-item white ends">ENDS XX/XX</li>
+
+          <!-- END!  -->
+          <!-- THIS IS THE TEXT FOR THE MORE AND CLOSE BUTTONS THAT CLICK OPEN AND CLOSE THE DISRUPTER-->
+
+          <li class="drop-button">
+            <div class="dropdown">
+              <button class="dropbtn">
+                <span class='white close-button'>CLOSE  <span class="close-ex">x</span></span>
+                <span class='white more'>MORE  <span class="more-plus">+</span></span>
+              </button>
+
+              <div id="myDropdown" class="dropdown-content">
+
+                <div class="percent-off">50% OFF</div>
+                <div class="any-one-item-dropdown">ANY ONE ITEM</div>
+                <div class="no-exclusion-dropdown">No Exclusions!</div>
+
+                <div class="use-code"><span class="use-code">USE CODE </span><span class="x-disrupt">xxxxxx</span></div>
+                <div class="restrictions"><a class="restrictions" href="#">Details</a></div>
+
+
+                <!-- END!  -->
+
+                <!-- THIS IS THE TEXT FROM THE DROPDOWN DISRUPTER, THE ONE THAT DROPS DOWN FROM THE BANNER ON DESKTOP -->
+              </div><!-- end dropdown -->
+            </div> <!-- end nav collapse -->
+          </li> <!-- end dropnav -->
+        </ul> <!-- end nav-bar"> -->
+      </div> <!-- end nav container -->
+    </section> <!-- end promo -->
+
+
+    <!-- END!  -->
+
+
+    <!-- THIS IS THE TEXT THAT APPEARS ON MOBILE -->
+
+    <section class="disrupter">
+      <div class= 'disrupter-div'>
+        <div class='row'>
+          <ul class="mobile-banner">
+            <li class="mobile-disrupter online-only">ONLINE ONLY. ENDS 3/21.</li>
+            <li class="mobile-disrupter off-one-item-mobile">50% OFF ANY ONE ITEM</li>
+            <li class="no-exclusion-mobile">No Exclusions!</li>
+
+            <li class="mobile-disrupter use-the-code">USE CODE <span class="underline">xxxxxx<span></li>
+            <li><div class="restrictions"><a class="restrictions" href="#">Details</a></div></li>
+          </ul>
+
+        </div>
+
+        <!-- END!  -->
+
+      </div>
+    </section>
+
+
+
+
+    <script src=src="https://code.jquery.com/jquery-1.8.0.js"></script>
+
+    <script>
+
+
+// THIS IS THE JAVASCRIPT FOR THE OPEN AND CLOSE FOR THE TOGGLE 
+
+jQuery( "span.more" ).click(function() {
+  jQuery( "#myDropdown" ).slideToggle( "medium" );
+  jQuery( "span.more" ).css( "display", "none" );
+  jQuery( "span.close-button").css( "display", "inline-block" );
+});
+
+
+jQuery( "span.close-button" ).click(function() {
+  jQuery( "#myDropdown" ).slideToggle( "medium" );
+  jQuery( "span.close-button" ).css( "display", "none" );
+  jQuery( "span.more" ).css( "display", "inline-block" );
+});
+
+</script>
+<script>
+
+// THIS IS THE JAVASCRIPT SO THE POPDOWN WILL NOT SHOW ON A SCREEN LESS THAN THE 1023 BREAKPOINT
+
+jQuery(window).resize(function(){
+  if (jQuery(window).width() <= 1023){  
+    jQuery( ".dropdown-disrupter" ).css( "display", "none" );
+  }
+});
+
+
+</script>
+
